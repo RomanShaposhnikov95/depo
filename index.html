@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form">
+        <div class="title-l">Pasūtījumā iekļaut</div>
+
+        <div class="form-wrap">
+            <div class="form-wrap-content">
+                <div class="form-wrap-item">
+                    <div class="title-m">Lielā kaste</div>
+                    <div class="form-wrap-item-num">
+                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="title-m counter" value="" min="0" type="number">
+                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    </div>
+                </div>
+                <div class="form-wrap-item">
+                    <div class="title-m">Mazā kaste</div>
+                    <div class="form-wrap-item-num">
+                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="title-m counter" value="" min="0" type="number">
+                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-wrap-content">
+                <div class="form-wrap-item">
+                    <div class="title-m">Lielais maiss</div>
+                    <div class="form-wrap-item-num">
+                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="title-m counter" value="" min="0" type="number">
+                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    </div>
+                </div>
+                <div class="form-wrap-item">
+                    <div class="title-m">Mazais maiss</div>
+                    <div class="form-wrap-item-num">
+                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="title-m counter" value="" min="0" type="number">
+                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    </div>
+                </div>
+                <div class="title-xs">*Minimālais maisu pasūtījuma apjoms: 50 gab.</div>
+            </div>
+        </div>
+
+        <div class="form-delivery">
+            <div class="title-l">Piegāde</div>
+
+            <div class="form-wrap delivery-left-group-radio">
+                <div class="form-wrap-content">
+                    <div class="form-wrap-item">
+                        <div class="title-m">Piegāde uz norādīto adresi (5 EUR)</div>
+                        <input class="step-btn" type="radio" id="inPlace" name="delivery" value="inPlace" checked>
+                        <label for="inPlace"></label>
+                    </div>
+                </div>
+
+                <div class="form-wrap-content">
+                    <div class="form-wrap-item float-left">
+                        <div class="title-m">Saņemšana DIO birojā</div>
+                        <input class="step-btn" type="radio" id="packstation" name="delivery" value="packstation">
+                        <label for="packstation"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-s">
+            Kopsumma (bez PVN):<span>000</span>EUR
+        </div>
+
+        <div class="info-form">
+            <div class="info-form-item">
+                <div class="title-l">Uzņēmuma nosaukums</div>
+
+                <input class="title-m" placeholder="Uzņēmuma nosaukums" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">Uzņēmuma reģistrācijas numurs</div>
+
+                <input class="title-m" placeholder="Reģistrācijas numurs" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">Uzņēmuma juridiskā adrese</div>
+
+                <input class="title-m" placeholder="Juridiskā adrese" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">Kontaktpersona</div>
+
+                <input class="title-m" placeholder="Vārds, Uzvārds" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">E-pasts</div>
+
+                <input class="title-m" placeholder="epasts@epasts.lv" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">Tālrunis</div>
+
+                <input class="title-m" placeholder="+371 0000000" type="text">
+            </div>
+
+            <div class="info-form-item">
+                <div class="title-l">Piegādes adrese</div>
+
+                <input class="title-m" placeholder="Adrese uz kuru piegādāt pasūtītās kastes" type="text">
+            </div>
+        </div>
+
+        <div class="btn-wrap">
+            <button class="button-xl">Nosūtīt</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="counter.js"></script>
+</body>
+</html>
