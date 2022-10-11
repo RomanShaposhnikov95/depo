@@ -18,17 +18,17 @@
                 <div class="form-wrap-item">
                     <div class="title-m">Lielā kaste</div>
                     <div class="form-wrap-item-num">
-                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input class="title-m counter" value="" min="0" type="number">
-                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        <button class="decr">-</button>
+                        <input id="big-box" class="title-m counter" min="0" type="number">
+                        <button class="incr">+</button>
                     </div>
                 </div>
                 <div class="form-wrap-item">
                     <div class="title-m">Mazā kaste</div>
                     <div class="form-wrap-item-num">
-                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input class="title-m counter" value="" min="0" type="number">
-                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        <button class="decr">-</button>
+                        <input id="small-box" class="title-m counter" min="0" type="number">
+                        <button class="incr">+</button>
                     </div>
                 </div>
             </div>
@@ -37,22 +37,23 @@
                 <div class="form-wrap-item">
                     <div class="title-m">Lielais maiss</div>
                     <div class="form-wrap-item-num">
-                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input class="title-m counter" value="" min="0" type="number">
-                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        <button class="decr">-</button>
+                        <input id="big-package" class="title-m counter" min="0" type="number">
+                        <button class="incr">+</button>
                     </div>
                 </div>
                 <div class="form-wrap-item">
                     <div class="title-m">Mazais maiss</div>
                     <div class="form-wrap-item-num">
-                        <button class="decr" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input class="title-m counter" value="" min="0" type="number">
-                        <button class="incr" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        <button class="decr">-</button>
+                        <input id="small-package" class="title-m counter" min="0" type="number">
+                        <button class="incr">+</button>
                     </div>
                 </div>
                 <div class="title-xs">*Minimālais maisu pasūtījuma apjoms: 50 gab.</div>
             </div>
         </div>
+
 
         <div class="form-delivery">
             <div class="title-l">Piegāde</div>
@@ -61,23 +62,23 @@
                 <div class="form-wrap-content">
                     <div class="form-wrap-item">
                         <div class="title-m">Piegāde uz norādīto adresi (5 EUR)</div>
-                        <input class="step-btn" type="radio" id="inPlace" name="delivery" value="inPlace" checked>
-                        <label for="inPlace"></label>
+                        <input class="step-btn" type="radio" id="deliv" name="delivery" value="inPlace">
+                        <label for="deliv"></label>
                     </div>
                 </div>
 
                 <div class="form-wrap-content">
                     <div class="form-wrap-item float-left">
                         <div class="title-m">Saņemšana DIO birojā</div>
-                        <input class="step-btn" type="radio" id="packstation" name="delivery" value="packstation">
-                        <label for="packstation"></label>
+                        <input class="step-btn" type="radio" id="dio" name="delivery" value="packstation">
+                        <label for="dio"></label>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="title-s">
-            Kopsumma (bez PVN):<span>000</span>EUR
+            Kopsumma (bez PVN):<span id="summ">0</span>EUR
         </div>
 
         <div class="info-form">
